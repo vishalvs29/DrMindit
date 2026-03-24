@@ -1,0 +1,1505 @@
+<!-- Design System -->
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Welcome to DrMindit | Role Selection</title>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&amp;family=Inter:wght@400;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary-fixed": "#d4e3ff",
+              "primary": "#005dac",
+              "error-container": "#ffdad6",
+              "tertiary-container": "#697781",
+              "inverse-primary": "#a5c8ff",
+              "on-secondary-fixed-variant": "#005312",
+              "surface-container-low": "#f3f4f5",
+              "on-primary": "#ffffff",
+              "inverse-surface": "#2e3132",
+              "inverse-on-surface": "#f0f1f2",
+              "on-error": "#ffffff",
+              "outline": "#717783",
+              "secondary": "#1b6d24",
+              "on-tertiary-fixed": "#0f1d25",
+              "secondary-fixed-dim": "#88d982",
+              "surface-container-highest": "#e1e3e4",
+              "primary-container": "#1976d2",
+              "tertiary-fixed-dim": "#bac9d3",
+              "background": "#f8f9fa",
+              "surface-variant": "#e1e3e4",
+              "on-secondary-fixed": "#002204",
+              "on-secondary": "#ffffff",
+              "on-error-container": "#93000a",
+              "on-primary-container": "#fffdff",
+              "surface": "#f8f9fa",
+              "on-tertiary": "#ffffff",
+              "primary-fixed-dim": "#a5c8ff",
+              "outline-variant": "#c1c6d4",
+              "error": "#ba1a1a",
+              "on-tertiary-fixed-variant": "#3b4951",
+              "secondary-container": "#a0f399",
+              "on-secondary-container": "#217128",
+              "surface-tint": "#005faf",
+              "surface-container": "#edeeef",
+              "tertiary": "#505e68",
+              "surface-container-high": "#e7e8e9",
+              "tertiary-fixed": "#d6e5ef",
+              "surface-bright": "#f8f9fa",
+              "surface-dim": "#d9dadb",
+              "on-tertiary-container": "#fdfdff",
+              "on-primary-fixed": "#001c3a",
+              "surface-container-lowest": "#ffffff",
+              "secondary-fixed": "#a3f69c",
+              "on-surface": "#191c1d",
+              "on-surface-variant": "#414752",
+              "on-primary-fixed-variant": "#004786",
+              "on-background": "#191c1d"
+            },
+            fontFamily: {
+              "headline": ["Manrope"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .bg-mesh {
+            background-color: #f8f9fa;
+            background-image: radial-gradient(at 0% 0%, #d4e3ff 0%, transparent 50%),
+                              radial-gradient(at 100% 100%, #a0f399 0%, transparent 50%);
+            background-attachment: fixed;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-mesh font-body text-on-surface min-h-screen flex flex-col">
+<!-- Top Navigation Anchor (Simulated based on Shared Components JSON) -->
+<header class="fixed top-0 w-full z-50 bg-white/80 backdrop-blur-xl shadow-sm">
+<div class="flex items-center justify-between px-6 py-4 w-full max-w-7xl mx-auto">
+<div class="text-blue-700 font-extrabold tracking-tighter font-headline text-2xl">
+                DrMindit
+            </div>
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center overflow-hidden">
+<span class="material-symbols-outlined text-outline">account_circle</span>
+</div>
+</div>
+</div>
+</header>
+<!-- Main Content Canvas -->
+<main class="flex-grow flex flex-col items-center justify-center px-6 pt-24 pb-12">
+<div class="max-w-4xl w-full text-center mb-12">
+<!-- Hero Typography -->
+<h1 class="font-headline font-extrabold text-4xl md:text-5xl text-on-surface tracking-tight mb-4 leading-tight">
+                Welcome to DrMindit.
+            </h1>
+<p class="font-body text-lg text-on-surface-variant max-w-2xl mx-auto">
+                How will you be using the platform? Choose the path that best describes your role to get started.
+            </p>
+</div>
+<!-- Role Selection Cards - Bento Style Layout -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6 w-full max-w-6xl">
+<!-- Option 1: Individual -->
+<button class="group relative flex flex-col items-start p-8 bg-surface-container-lowest rounded-xl shadow-[0_8px_32px_rgba(25,28,29,0.04)] transition-all duration-300 hover:-translate-y-2 hover:shadow-lg text-left overflow-hidden">
+<div class="absolute top-0 right-0 w-32 h-32 bg-primary/5 rounded-full -mr-16 -mt-16 transition-transform group-hover:scale-110"></div>
+<div class="w-14 h-14 bg-primary-fixed rounded-2xl flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-primary text-3xl" data-icon="person">person</span>
+</div>
+<h3 class="font-headline font-bold text-xl text-on-surface mb-2">Individual</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed mb-8">
+                    For personal mental health journeys. Access tools, tracking, and personalized resources.
+                </p>
+<div class="mt-auto flex items-center text-primary font-semibold text-sm">
+                    Select Role <span class="material-symbols-outlined ml-2 text-sm">arrow_forward</span>
+</div>
+</button>
+<!-- Option 2: Organization Admin -->
+<button class="group relative flex flex-col items-start p-8 bg-surface-container-lowest rounded-xl shadow-[0_8px_32px_rgba(25,28,29,0.04)] border-2 border-transparent hover:border-secondary/20 transition-all duration-300 hover:-translate-y-2 hover:shadow-lg text-left overflow-hidden">
+<div class="absolute top-0 right-0 w-32 h-32 bg-secondary/5 rounded-full -mr-16 -mt-16 transition-transform group-hover:scale-110"></div>
+<div class="w-14 h-14 bg-secondary-container/30 rounded-2xl flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-secondary text-3xl" data-icon="corporate_fare">corporate_fare</span>
+</div>
+<h3 class="font-headline font-bold text-xl text-on-surface mb-2">Organization Admin</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed mb-8">
+                    For school, corporate, or government leads managing wellness programs for their teams.
+                </p>
+<div class="mt-auto flex items-center text-secondary font-semibold text-sm">
+                    Select Role <span class="material-symbols-outlined ml-2 text-sm">arrow_forward</span>
+</div>
+</button>
+<!-- Option 3: Super Admin -->
+<button class="group relative flex flex-col items-start p-8 bg-surface-container-lowest rounded-xl shadow-[0_8px_32px_rgba(25,28,29,0.04)] transition-all duration-300 hover:-translate-y-2 hover:shadow-lg text-left overflow-hidden">
+<div class="absolute top-0 right-0 w-32 h-32 bg-tertiary/5 rounded-full -mr-16 -mt-16 transition-transform group-hover:scale-110"></div>
+<div class="w-14 h-14 bg-tertiary-fixed rounded-2xl flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-tertiary text-3xl" data-icon="admin_panel_settings">admin_panel_settings</span>
+</div>
+<h3 class="font-headline font-bold text-xl text-on-surface mb-2">Super Admin</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed mb-8">
+                    Platform owner access for system configuration, global analytics, and master controls.
+                </p>
+<div class="mt-auto flex items-center text-tertiary font-semibold text-sm">
+                    Select Role <span class="material-symbols-outlined ml-2 text-sm">arrow_forward</span>
+</div>
+</button>
+</div>
+<!-- Call to Action -->
+<div class="mt-16 w-full max-w-md">
+<button class="w-full py-4 px-8 bg-gradient-to-r from-primary to-primary-container text-on-primary font-bold text-lg rounded-full shadow-lg hover:shadow-xl transition-all active:scale-95 flex items-center justify-center gap-2">
+                Continue
+                <span class="material-symbols-outlined">chevron_right</span>
+</button>
+<p class="mt-6 text-center text-on-surface-variant text-sm">
+                Already have an account? <a class="text-primary font-semibold hover:underline" href="#">Sign In</a>
+</p>
+</div>
+</main>
+<!-- Decorative Illustration Segment -->
+<section class="w-full max-w-7xl mx-auto px-6 mb-24">
+<div class="h-64 rounded-xl overflow-hidden relative">
+<img alt="Collaborative Environment" class="w-full h-full object-cover opacity-20 mix-blend-multiply" data-alt="Soft ethereal view of a group of diverse professionals sitting in a sunlit airy modern lounge with plants and soft shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCiHDeEZThPpVHINUlAuz-1lFoMjwey6n2bAcHINcnwH7A24Uswr6AifYLjt6wA1ry2WwoAhtLKiFhBWgkiDQHqg_NcJ3kRJpaVGpvivOFK2_-28xPeymR_t6FPQcknakRRCT1RJEm95l-wqGRRLexZm1vQ7nVCX41o8ww6XMeYOtgJYr32sryHhfDG__8F26uPmN53T2IfXps9KapRSQ7kCqLHKx0bnzYIn87eKjH_cQBBn1oz5J2Yi_4SdmRAUV1qWmfQdZ641yBM"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent"></div>
+</div>
+</section>
+<!-- Bottom Nav Suppression Logic: Not rendered for onboarding screen to minimize friction/distraction -->
+</body></html>
+
+<!-- Onboarding & Role Selection -->
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>DrMindit | Organization Analytics Dashboard</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary-fixed": "#d4e3ff",
+              "primary": "#005dac",
+              "error-container": "#ffdad6",
+              "tertiary-container": "#697781",
+              "inverse-primary": "#a5c8ff",
+              "on-secondary-fixed-variant": "#005312",
+              "surface-container-low": "#f3f4f5",
+              "on-primary": "#ffffff",
+              "inverse-surface": "#2e3132",
+              "inverse-on-surface": "#f0f1f2",
+              "on-error": "#ffffff",
+              "outline": "#717783",
+              "secondary": "#1b6d24",
+              "on-tertiary-fixed": "#0f1d25",
+              "secondary-fixed-dim": "#88d982",
+              "surface-container-highest": "#e1e3e4",
+              "primary-container": "#1976d2",
+              "tertiary-fixed-dim": "#bac9d3",
+              "background": "#f8f9fa",
+              "surface-variant": "#e1e3e4",
+              "on-secondary-fixed": "#002204",
+              "on-secondary": "#ffffff",
+              "on-error-container": "#93000a",
+              "on-primary-container": "#fffdff",
+              "surface": "#f8f9fa",
+              "on-tertiary": "#ffffff",
+              "primary-fixed-dim": "#a5c8ff",
+              "outline-variant": "#c1c6d4",
+              "error": "#ba1a1a",
+              "on-tertiary-fixed-variant": "#3b4951",
+              "secondary-container": "#a0f399",
+              "on-secondary-container": "#217128",
+              "surface-tint": "#005faf",
+              "surface-container": "#edeeef",
+              "tertiary": "#505e68",
+              "surface-container-high": "#e7e8e9",
+              "tertiary-fixed": "#d6e5ef",
+              "surface-bright": "#f8f9fa",
+              "surface-dim": "#d9dadb",
+              "on-tertiary-container": "#fdfdff",
+              "on-primary-fixed": "#001c3a",
+              "surface-container-lowest": "#ffffff",
+              "secondary-fixed": "#a3f69c",
+              "on-surface": "#191c1d",
+              "on-surface-variant": "#414752",
+              "on-primary-fixed-variant": "#004786",
+              "on-background": "#191c1d"
+            },
+            fontFamily: {
+              "headline": ["Manrope"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      .glass-card {
+        backdrop-filter: blur(20px);
+        background: rgba(255, 255, 255, 0.8);
+      }
+      body {
+        font-family: 'Inter', sans-serif;
+        background-color: #f8f9fa;
+        color: #191c1d;
+      }
+      h1, h2, h3 {
+        font-family: 'Manrope', sans-serif;
+      }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background min-h-screen pb-24 md:pb-0">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-white/80 dark:bg-slate-900/80 backdrop-blur-xl shadow-sm dark:shadow-none">
+<div class="flex items-center justify-between px-6 py-4 w-full max-w-7xl mx-auto">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-full bg-primary-fixed flex items-center justify-center overflow-hidden">
+<img alt="User profile" class="w-full h-full object-cover" data-alt="professional headshot of a corporate manager in a light blue shirt with a friendly and confident expression" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDFc971d0nqWJr3DEePT_2cXFj0TH23UAlGS5UTqyfq56HgD4B_d7_9yeRki6JonobxRfffR1kI71MqXC1NLf5cEcjSvKm9T766tnwz5MmkA7E4QOSjynDxUDkrE_O1Vocam8lJP4XwwOrQbb4wB4jy1MRgvcJBTQ7u92TVXpGM4Yiuebzs7XIFuWr3Oy4joP-sdsC8Vw8JHCLGe6WK-xp_xvRZxPnRmsoKN9CoGXeYfseNDCPH1zt2UGKeMF-oPH0K7635skHz1-hB"/>
+</div>
+<h1 class="text-blue-700 dark:text-blue-400 font-extrabold tracking-tighter text-lg font-['Manrope']">DrMindit</h1>
+</div>
+<div class="flex items-center gap-6">
+<!-- Desktop Nav Cluster -->
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-blue-700 dark:text-blue-400 font-semibold transition-colors" href="#">Dashboard</a>
+<a class="text-slate-500 dark:text-slate-400 hover:text-blue-700 transition-colors" href="#">Reports</a>
+<a class="text-slate-500 dark:text-slate-400 hover:text-blue-700 transition-colors" href="#">Team</a>
+</nav>
+<button class="text-slate-500 dark:text-slate-400 p-2 rounded-full hover:bg-blue-50 dark:hover:bg-blue-900/20 transition-all">
+<span class="material-symbols-outlined" data-icon="notifications">notifications</span>
+</button>
+</div>
+</div>
+</header>
+<main class="max-w-7xl mx-auto px-6 pt-24 pb-12">
+<!-- Dashboard Header -->
+<section class="mb-12">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-4">
+<div>
+<span class="text-primary font-bold tracking-widest uppercase text-xs">Organization Overview</span>
+<h2 class="text-4xl font-extrabold text-on-surface tracking-tight mt-2">Team Wellness Insights</h2>
+<p class="text-on-surface-variant mt-2 max-w-2xl">Real-time anonymized data to help you understand and support your workforce's mental resilience.</p>
+</div>
+<div class="flex gap-3">
+<button class="bg-surface-container-high text-on-surface px-6 py-3 rounded-full font-semibold flex items-center gap-2 hover:bg-surface-container-highest transition-colors">
+<span class="material-symbols-outlined text-sm" data-icon="calendar_today">calendar_today</span>
+                        Last 30 Days
+                    </button>
+<button class="bg-primary text-white px-8 py-3 rounded-full font-semibold flex items-center gap-2 hover:opacity-90 transition-all shadow-sm">
+<span class="material-symbols-outlined text-sm" data-icon="download">download</span>
+                        Export PDF
+                    </button>
+</div>
+</div>
+</section>
+<!-- High-level Overview Cards (Bento Style) -->
+<section class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+<!-- Active Users -->
+<div class="bg-surface-container-lowest p-8 rounded-xl shadow-[0_8px_32px_rgba(25,28,29,0.04)] relative overflow-hidden group">
+<div class="absolute top-0 right-0 p-6 opacity-10 group-hover:opacity-20 transition-opacity">
+<span class="material-symbols-outlined text-7xl" data-icon="group">group</span>
+</div>
+<div class="flex flex-col h-full justify-between">
+<div>
+<div class="w-12 h-12 rounded-2xl bg-primary-fixed flex items-center justify-center mb-4">
+<span class="material-symbols-outlined text-primary" data-icon="person_check">person_check</span>
+</div>
+<p class="text-on-surface-variant font-medium">Active Users</p>
+<h3 class="text-5xl font-extrabold text-on-surface mt-2 tracking-tighter">1,284</h3>
+</div>
+<div class="mt-6 flex items-center gap-2 text-secondary font-bold text-sm">
+<span class="material-symbols-outlined text-sm" data-icon="trending_up">trending_up</span>
+<span>12% from last month</span>
+</div>
+</div>
+</div>
+<!-- Avg Stress Level -->
+<div class="bg-surface-container-lowest p-8 rounded-xl shadow-[0_8px_32px_rgba(25,28,29,0.04)] relative overflow-hidden group">
+<div class="absolute top-0 right-0 p-6 opacity-10 group-hover:opacity-20 transition-opacity">
+<span class="material-symbols-outlined text-7xl" data-icon="psychology">psychology</span>
+</div>
+<div class="flex flex-col h-full justify-between">
+<div>
+<div class="w-12 h-12 rounded-2xl bg-secondary-container/30 flex items-center justify-center mb-4">
+<span class="material-symbols-outlined text-secondary" data-icon="waves">waves</span>
+</div>
+<p class="text-on-surface-variant font-medium">Avg. Stress Level</p>
+<h3 class="text-5xl font-extrabold text-on-surface mt-2 tracking-tighter">Low</h3>
+</div>
+<div class="mt-6">
+<div class="w-full bg-secondary-container/20 h-2 rounded-full overflow-hidden">
+<div class="bg-secondary h-full w-[35%] rounded-full"></div>
+</div>
+<p class="text-xs text-on-surface-variant mt-2 font-medium">Index Score: 3.2/10</p>
+</div>
+</div>
+</div>
+<!-- Top Program -->
+<div class="bg-primary p-8 rounded-xl shadow-lg relative overflow-hidden group text-white">
+<div class="absolute inset-0 bg-gradient-to-br from-primary to-primary-container opacity-90"></div>
+<div class="relative z-10 flex flex-col h-full justify-between">
+<div>
+<div class="w-12 h-12 rounded-2xl bg-white/20 flex items-center justify-center mb-4">
+<span class="material-symbols-outlined text-white" data-icon="auto_stories">auto_stories</span>
+</div>
+<p class="text-white/80 font-medium">Top Program</p>
+<h3 class="text-3xl font-bold text-white mt-2 leading-tight">Sleep Recovery</h3>
+</div>
+<div class="mt-6">
+<p class="text-white/60 text-xs uppercase tracking-widest font-bold">Engagement Rate</p>
+<p class="text-2xl font-extrabold">88.4%</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Charts Grid -->
+<section class="grid grid-cols-1 lg:grid-cols-2 gap-10">
+<!-- Engagement Chart: Session Completions -->
+<div class="bg-surface-container-low p-10 rounded-lg">
+<div class="flex justify-between items-center mb-8">
+<h3 class="text-xl font-bold text-on-surface">Session Completions</h3>
+<div class="flex gap-4 text-xs font-bold uppercase tracking-widest text-on-surface-variant">
+<span class="flex items-center gap-1"><span class="w-2 h-2 rounded-full bg-primary"></span> This Month</span>
+<span class="flex items-center gap-1"><span class="w-2 h-2 rounded-full bg-outline-variant"></span> Last Month</span>
+</div>
+</div>
+<!-- Mock Line Chart -->
+<div class="relative h-64 w-full flex items-end justify-between px-2">
+<svg class="absolute inset-0 w-full h-full" preserveaspectratio="none">
+<path d="M0,180 Q100,140 200,160 T400,100 T600,80 T800,120 T1000,40" fill="none" stroke="#005dac" stroke-linecap="round" stroke-width="4"></path>
+<path d="M0,200 Q100,180 200,190 T400,150 T600,160 T800,180 T1000,130" fill="none" stroke="#c1c6d4" stroke-dasharray="4 4" stroke-linecap="round" stroke-width="2"></path>
+</svg>
+<!-- X-Axis Labels -->
+<div class="absolute bottom-[-2rem] w-full flex justify-between text-[10px] text-on-surface-variant font-bold">
+<span>Day 1</span>
+<span>Day 10</span>
+<span>Day 20</span>
+<span>Day 30</span>
+</div>
+</div>
+</div>
+<!-- Departmental Breakdown: Bar Chart -->
+<div class="bg-surface-container-low p-10 rounded-lg">
+<h3 class="text-xl font-bold text-on-surface mb-8">Stress Levels by Department</h3>
+<div class="space-y-6">
+<!-- Dept 1 -->
+<div>
+<div class="flex justify-between text-sm mb-2">
+<span class="font-semibold text-on-surface">Engineering</span>
+<span class="text-on-surface-variant">4.2 (Moderate)</span>
+</div>
+<div class="w-full bg-white h-4 rounded-full overflow-hidden">
+<div class="bg-primary h-full w-[42%]"></div>
+</div>
+</div>
+<!-- Dept 2 -->
+<div>
+<div class="flex justify-between text-sm mb-2">
+<span class="font-semibold text-on-surface">Creative &amp; Marketing</span>
+<span class="text-on-surface-variant">2.8 (Low)</span>
+</div>
+<div class="w-full bg-white h-4 rounded-full overflow-hidden">
+<div class="bg-secondary h-full w-[28%]"></div>
+</div>
+</div>
+<!-- Dept 3 -->
+<div>
+<div class="flex justify-between text-sm mb-2">
+<span class="font-semibold text-on-surface">Operations</span>
+<span class="text-on-surface-variant">5.1 (Elevated)</span>
+</div>
+<div class="w-full bg-white h-4 rounded-full overflow-hidden">
+<div class="bg-error h-full w-[51%] opacity-60"></div>
+</div>
+</div>
+<!-- Dept 4 -->
+<div>
+<div class="flex justify-between text-sm mb-2">
+<span class="font-semibold text-on-surface">Sales &amp; Support</span>
+<span class="text-on-surface-variant">3.5 (Low)</span>
+</div>
+<div class="w-full bg-white h-4 rounded-full overflow-hidden">
+<div class="bg-primary h-full w-[35%]"></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Program Completion Rates -->
+<section class="mt-12">
+<h3 class="text-2xl font-bold text-on-surface mb-8">Program Completion by Category</h3>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+<div class="bg-surface-container-lowest p-6 rounded-2xl flex flex-col items-center text-center">
+<div class="w-16 h-16 rounded-full border-[6px] border-secondary-container border-t-secondary flex items-center justify-center mb-4">
+<span class="font-bold text-lg">92%</span>
+</div>
+<span class="font-semibold text-on-surface">Meditation</span>
+<span class="text-xs text-on-surface-variant mt-1">Focus &amp; Clarity</span>
+</div>
+<div class="bg-surface-container-lowest p-6 rounded-2xl flex flex-col items-center text-center">
+<div class="w-16 h-16 rounded-full border-[6px] border-secondary-container border-t-secondary flex items-center justify-center mb-4">
+<span class="font-bold text-lg">78%</span>
+</div>
+<span class="font-semibold text-on-surface">Restoration</span>
+<span class="text-xs text-on-surface-variant mt-1">Physical Well-being</span>
+</div>
+<div class="bg-surface-container-lowest p-6 rounded-2xl flex flex-col items-center text-center">
+<div class="w-16 h-16 rounded-full border-[6px] border-secondary-container border-t-secondary flex items-center justify-center mb-4">
+<span class="font-bold text-lg">84%</span>
+</div>
+<span class="font-semibold text-on-surface">Leadership</span>
+<span class="text-xs text-on-surface-variant mt-1">Emotional Intelligence</span>
+</div>
+<div class="bg-surface-container-lowest p-6 rounded-2xl flex flex-col items-center text-center">
+<div class="w-16 h-16 rounded-full border-[6px] border-secondary-container border-t-secondary flex items-center justify-center mb-4">
+<span class="font-bold text-lg">65%</span>
+</div>
+<span class="font-semibold text-on-surface">Anxiety</span>
+<span class="text-xs text-on-surface-variant mt-1">Crisis Management</span>
+</div>
+</div>
+</section>
+</main>
+<!-- BottomNavBar (Visible on Mobile) -->
+<nav class="md:hidden fixed bottom-0 left-0 w-full flex justify-around items-center px-4 pb-6 pt-3 bg-white/80 dark:bg-slate-900/80 backdrop-blur-xl rounded-t-[3rem] z-50 shadow-[0_-8px_32px_rgba(25,28,29,0.04)]">
+<a class="flex flex-col items-center justify-center bg-blue-100 dark:bg-blue-900/40 text-blue-800 dark:text-blue-200 rounded-2xl px-5 py-2 scale-90 duration-200 ease-out" href="#">
+<span class="material-symbols-outlined" data-icon="home">home</span>
+<span class="font-['Inter'] text-[10px] font-semibold tracking-wide uppercase mt-1">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 px-5 py-2 hover:text-blue-600 dark:hover:text-blue-300" href="#">
+<span class="material-symbols-outlined" data-icon="explore">explore</span>
+<span class="font-['Inter'] text-[10px] font-semibold tracking-wide uppercase mt-1">Explore</span>
+</a>
+<a class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 px-5 py-2 hover:text-blue-600 dark:hover:text-blue-300" href="#">
+<span class="material-symbols-outlined" data-icon="auto_stories">auto_stories</span>
+<span class="font-['Inter'] text-[10px] font-semibold tracking-wide uppercase mt-1">Programs</span>
+</a>
+<a class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 px-5 py-2 hover:text-blue-600 dark:hover:text-blue-300" href="#">
+<span class="material-symbols-outlined" data-icon="analytics">analytics</span>
+<span class="font-['Inter'] text-[10px] font-semibold tracking-wide uppercase mt-1">Profile</span>
+</a>
+</nav>
+</body></html>
+
+<!-- Organization Analytics Dashboard -->
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary-fixed": "#d4e3ff",
+              "primary": "#005dac",
+              "error-container": "#ffdad6",
+              "tertiary-container": "#697781",
+              "inverse-primary": "#a5c8ff",
+              "on-secondary-fixed-variant": "#005312",
+              "surface-container-low": "#f3f4f5",
+              "on-primary": "#ffffff",
+              "inverse-surface": "#2e3132",
+              "inverse-on-surface": "#f0f1f2",
+              "on-error": "#ffffff",
+              "outline": "#717783",
+              "secondary": "#1b6d24",
+              "on-tertiary-fixed": "#0f1d25",
+              "secondary-fixed-dim": "#88d982",
+              "surface-container-highest": "#e1e3e4",
+              "primary-container": "#1976d2",
+              "tertiary-fixed-dim": "#bac9d3",
+              "background": "#f8f9fa",
+              "surface-variant": "#e1e3e4",
+              "on-secondary-fixed": "#002204",
+              "on-secondary": "#ffffff",
+              "on-error-container": "#93000a",
+              "on-primary-container": "#fffdff",
+              "surface": "#f8f9fa",
+              "on-tertiary": "#ffffff",
+              "primary-fixed-dim": "#a5c8ff",
+              "outline-variant": "#c1c6d4",
+              "error": "#ba1a1a",
+              "on-tertiary-fixed-variant": "#3b4951",
+              "secondary-container": "#a0f399",
+              "on-secondary-container": "#217128",
+              "surface-tint": "#005faf",
+              "surface-container": "#edeeef",
+              "tertiary": "#505e68",
+              "surface-container-high": "#e7e8e9",
+              "tertiary-fixed": "#d6e5ef",
+              "surface-bright": "#f8f9fa",
+              "surface-dim": "#d9dadb",
+              "on-tertiary-container": "#fdfdff",
+              "on-primary-fixed": "#001c3a",
+              "surface-container-lowest": "#ffffff",
+              "secondary-fixed": "#a3f69c",
+              "on-surface": "#191c1d",
+              "on-surface-variant": "#414752",
+              "on-primary-fixed-variant": "#004786",
+              "on-background": "#191c1d"
+            },
+            fontFamily: {
+              "headline": ["Manrope"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+        ::-webkit-scrollbar { display: none; }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(12px);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background font-body text-on-surface">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-white/80 dark:bg-slate-900/80 backdrop-blur-xl shadow-sm dark:shadow-none">
+<div class="flex items-center justify-between px-6 py-4 w-full max-w-7xl mx-auto">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-primary-container overflow-hidden">
+<img alt="User profile photo" data-alt="Close up portrait of a smiling woman with a serene expression, soft natural lighting, professional photography style" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBg_Z3WuQkAcKzssfjH_hagafsnay1fRkh3DBB7frNjryJPLSAIWUmniYpH-US0ui4LyUIA81POE06QGgZ4pJADeXVw8b1hNzduV-9R8uicphjPGW5b75ygbzrT6d1LpqjsKP-0tjvzN2p9VYw9dFSmQs3GZ6GiFA_xl4OSO9Zajcr-e_hrzPHWjo2iXS_9hyFzbBHdFfEuyhxVAzVY6xbwvhj8Ycvqg4TPSNSrg4B90qRhQb5j6eNAh3FAZeoiTrRWpNbYmWbBdhBv"/>
+</div>
+<span class="text-blue-700 dark:text-blue-400 font-['Manrope'] font-extrabold tracking-tighter text-lg">DrMindit</span>
+</div>
+<button class="w-10 h-10 flex items-center justify-center rounded-full hover:bg-blue-50 transition-colors text-slate-500">
+<span class="material-symbols-outlined" data-icon="notifications">notifications</span>
+</button>
+</div>
+</header>
+<main class="pt-24 pb-32 px-6 max-w-7xl mx-auto min-h-screen">
+<!-- Search Section -->
+<section class="mb-8">
+<div class="relative group">
+<div class="absolute inset-y-0 left-5 flex items-center pointer-events-none text-on-surface-variant">
+<span class="material-symbols-outlined" data-icon="search">search</span>
+</div>
+<input class="w-full bg-surface-container-low border-none rounded-full py-5 pl-14 pr-6 text-on-surface focus:ring-2 focus:ring-primary/20 transition-all placeholder:text-on-surface-variant/60 font-medium" placeholder="Search sessions, techniques..." type="text"/>
+</div>
+</section>
+<!-- Horizontal Filter Chips -->
+<section class="mb-10 -mx-6 px-6 overflow-x-auto flex gap-3 no-scrollbar">
+<button class="whitespace-nowrap px-6 py-3 rounded-full bg-primary text-on-primary font-semibold shadow-md">All Sessions</button>
+<button class="whitespace-nowrap px-6 py-3 rounded-full bg-surface-container-high text-on-surface-variant hover:bg-surface-container-highest transition-colors font-medium">Sleep</button>
+<button class="whitespace-nowrap px-6 py-3 rounded-full bg-surface-container-high text-on-surface-variant hover:bg-surface-container-highest transition-colors font-medium">Anxiety</button>
+<button class="whitespace-nowrap px-6 py-3 rounded-full bg-surface-container-high text-on-surface-variant hover:bg-surface-container-highest transition-colors font-medium">Stress</button>
+<button class="whitespace-nowrap px-6 py-3 rounded-full bg-surface-container-high text-on-surface-variant hover:bg-surface-container-highest transition-colors font-medium">Depression</button>
+<button class="whitespace-nowrap px-6 py-3 rounded-full bg-surface-container-high text-on-surface-variant hover:bg-surface-container-highest transition-colors font-medium">Focus</button>
+</section>
+<!-- Featured Session: Bento-Style Hero -->
+<section class="mb-12">
+<h2 class="font-headline text-2xl font-extrabold tracking-tight mb-6 text-on-surface">Session of the Day</h2>
+<div class="relative h-[420px] rounded-xl overflow-hidden shadow-2xl group cursor-pointer">
+<img alt="Forest background" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Sunlight streaming through tall redwood trees in a misty, peaceful forest with vibrant green ferns in the foreground" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAO3pgjoMnkPpC5ojv7PouGkOQp6cGBTTYInsXM362XfJuc2Uxt3hNsv3n-Zg6WoXOjfJrhwGzuEGZOX7aHlt0dWigZS9fhChITEbVwoix49nsoT0nzlrEwJU54S_azrO4L74JVEly0E1FAi5HwOTe9IoYAVukZ-bvKVTYwo2GYfzMx8D2z6XDGtyIGOrvPhpU5ri45vXLEx3fbM8uhuatXPBbTJtVFNHHwKOsmXhBbldgYqN_bqHe6YEKG8hpiiNDf04mHgqamzVSo"/>
+<div class="absolute inset-0 bg-gradient-to-t from-on-surface/90 via-on-surface/20 to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-8 w-full md:w-2/3">
+<div class="inline-flex items-center gap-2 bg-secondary/90 text-on-secondary px-3 py-1 rounded-full text-xs font-bold tracking-wider uppercase mb-4">
+<span class="material-symbols-outlined text-sm" data-icon="auto_awesome">auto_awesome</span>
+                        Recommended
+                    </div>
+<h3 class="font-headline text-4xl md:text-5xl font-extrabold text-white mb-4 leading-tight">Finding Inner Calm in the Redwoods</h3>
+<p class="text-white/80 text-lg mb-6 max-w-lg">A 20-minute immersive audio journey designed to regulate your nervous system through deep forest soundscapes.</p>
+<div class="flex items-center gap-6">
+<button class="bg-primary hover:bg-primary-container text-on-primary px-8 py-4 rounded-full font-bold flex items-center gap-2 transition-all active:scale-95 shadow-lg">
+<span class="material-symbols-outlined" data-icon="play_arrow" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+                            Start Session
+                        </button>
+<div class="flex flex-col text-white/90">
+<span class="text-xs font-bold uppercase tracking-widest opacity-60">Duration</span>
+<span class="font-bold">20 Mins</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Session List: Multi-Column/Asymmetric Grid -->
+<section class="mb-12">
+<div class="flex items-center justify-between mb-8">
+<h2 class="font-headline text-2xl font-extrabold tracking-tight text-on-surface">Explore Library</h2>
+<button class="text-primary font-bold text-sm hover:underline">View All Categories</button>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<!-- Session Card 1 -->
+<div class="flex flex-col md:flex-row gap-6 p-6 rounded-xl bg-surface-container-lowest hover:bg-surface-container-low transition-colors group cursor-pointer">
+<div class="relative w-full md:w-40 h-40 rounded-lg overflow-hidden shrink-0">
+<img alt="Beach background" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Serene beach at sunset with calm waves washing onto golden sand under a soft pink and purple sky" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDAAMj2gREzj2coeptHP33e6rI4pZEz5CbvqDCaiUNoWZzzptIaT1Ul99R27M5I6M8LiL6dfafWHNtfKGI_kylhijpcrMBge6Y8iokqxGJTnFFRzZDTL-q-rFhckSFUsDXIWfWIQCmVS8IBVkbLuvuUSGUdkezPqQRemvLgK_6G95JL7ht32m_1mEREB2JeP0ddAt8QHRRrADF1Xyhg1_z73kT3DsMJcZCnuQUsGOWsvV5y2zAo5bfZ5-w-GpHSwyzGm_NvDLe9s1pD"/>
+</div>
+<div class="flex flex-col justify-between py-1">
+<div>
+<div class="flex items-center gap-2 mb-2">
+<span class="text-[10px] font-extrabold uppercase tracking-widest text-secondary bg-secondary-container/30 px-2 py-0.5 rounded">Sleep</span>
+<span class="text-[10px] font-extrabold uppercase tracking-widest text-on-surface-variant">Beginner</span>
+</div>
+<h4 class="font-headline text-xl font-bold mb-2 group-hover:text-primary transition-colors">Tides of Tranquility</h4>
+<p class="text-on-surface-variant text-sm line-clamp-2">Drift away with the rhythmic sounds of ocean waves and guided breathing for deep sleep.</p>
+</div>
+<div class="flex items-center gap-4 mt-4 text-on-surface-variant text-xs font-bold">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm" data-icon="schedule">schedule</span> 15m</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm text-primary" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span> 4.9</span>
+</div>
+</div>
+</div>
+<!-- Session Card 2 -->
+<div class="flex flex-col md:flex-row gap-6 p-6 rounded-xl bg-surface-container-lowest hover:bg-surface-container-low transition-colors group cursor-pointer">
+<div class="relative w-full md:w-40 h-40 rounded-lg overflow-hidden shrink-0">
+<img alt="Night sky" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="A dark and clear night sky filled with millions of twinkling stars and the faint glow of the milky way galaxy" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBUovIaoI7MwXlHzUBpmuMIusbha6k5Dgelb3SaZ78zfIXryfZSJdGZzHVI43ah7wmoojaf07Y5WzOgDAtalPyng7oy5EUazE3FGyS0nUrnw_u91-NOBa0D198rqnAw7Z5ZXmnnQ8LlI4llX4AyUgUkxS6gy2Gx4UeUL59dr1Sas3h-S-hImGfqKtLaPNbL2FzIIPmqkAvw7LMf4qPS6Vnw60_bM3igJQfGBs8tchDmND8zhiRlgJ6uOGj9L8QNm6CluEQIliMElr3x"/>
+</div>
+<div class="flex flex-col justify-between py-1">
+<div>
+<div class="flex items-center gap-2 mb-2">
+<span class="text-[10px] font-extrabold uppercase tracking-widest text-primary bg-primary-fixed px-2 py-0.5 rounded">Anxiety</span>
+<span class="text-[10px] font-extrabold uppercase tracking-widest text-on-surface-variant">Intermediate</span>
+</div>
+<h4 class="font-headline text-xl font-bold mb-2 group-hover:text-primary transition-colors">The Infinite Sky</h4>
+<p class="text-on-surface-variant text-sm line-clamp-2">Perspective-shifting meditation to help alleviate acute feelings of worry and overthinking.</p>
+</div>
+<div class="flex items-center gap-4 mt-4 text-on-surface-variant text-xs font-bold">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm" data-icon="schedule">schedule</span> 10m</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm text-primary" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span> 4.7</span>
+</div>
+</div>
+</div>
+<!-- Session Card 3 -->
+<div class="flex flex-col md:flex-row gap-6 p-6 rounded-xl bg-surface-container-lowest hover:bg-surface-container-low transition-colors group cursor-pointer">
+<div class="relative w-full md:w-40 h-40 rounded-lg overflow-hidden shrink-0">
+<img alt="Workstation" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Clean minimal desk setup with a cup of matcha tea and a simple journal in soft morning daylight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCV5IsoOeF_bfx0V-I4zTZGVWCK18BeyOJam2jLsmXr3-hXCfrYYvs-obqV3UQVBctzOD4fh1Tlqkhol3h6rq-4bZmEEZ_EG67AxmGCaC7zN9gvwwtDSt9uZfvvi_byMOc8Oh9cuGdByOa9FESE6CV4Lui-jdtBpfO5UK0gDPHwOddrpDDscSCdb6lNfy3lFL9G-Q8B0kuI1IDvZmjF7FyNMfgtu7M7fdcaKRoglI70lhoE2nlUUMVc1M4kVkIwJyTm8HIHJpJB6Wju"/>
+</div>
+<div class="flex flex-col justify-between py-1">
+<div>
+<div class="flex items-center gap-2 mb-2">
+<span class="text-[10px] font-extrabold uppercase tracking-widest text-tertiary bg-tertiary-fixed px-2 py-0.5 rounded">Focus</span>
+<span class="text-[10px] font-extrabold uppercase tracking-widest text-on-surface-variant">Advanced</span>
+</div>
+<h4 class="font-headline text-xl font-bold mb-2 group-hover:text-primary transition-colors">Digital Detox Drill</h4>
+<p class="text-on-surface-variant text-sm line-clamp-2">Sharp techniques to regain your attention span in an age of constant notification interruptions.</p>
+</div>
+<div class="flex items-center gap-4 mt-4 text-on-surface-variant text-xs font-bold">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm" data-icon="schedule">schedule</span> 5m</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm text-primary" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span> 4.8</span>
+</div>
+</div>
+</div>
+<!-- Session Card 4 -->
+<div class="flex flex-col md:flex-row gap-6 p-6 rounded-xl bg-surface-container-lowest hover:bg-surface-container-low transition-colors group cursor-pointer">
+<div class="relative w-full md:w-40 h-40 rounded-lg overflow-hidden shrink-0">
+<img alt="Comforting scene" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="A person's hands holding a warm ceramic mug with steam rising gently in a cozy, dimly lit living room" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBiYY_3TbIzYqPlPRIhs7STld939Q7V-k_-jE1w6o6VG8479AYTs-mkW9t5rbICLeTT5RokGtCf0b3Cp-ZY9yaPTuGMz9EbpYKlZpa2NXLCbDXnPgnx2bfa57-HbprzPzI_c-nUXpN2lu65w4cDSOEkpGOimptMXqHVnXFYu2hF0nwBCjkkka2Q7noqtat1WGmgaDZDPcdG0IZzha9zm0CNCrX_WVhLFQSmHV4OGkZ7KeNR9ejF7DYssdP1kpx-3UkXIUTx098V9KoM"/>
+</div>
+<div class="flex flex-col justify-between py-1">
+<div>
+<div class="flex items-center gap-2 mb-2">
+<span class="text-[10px] font-extrabold uppercase tracking-widest text-on-secondary-fixed-variant bg-secondary-container px-2 py-0.5 rounded">Stress</span>
+<span class="text-[10px] font-extrabold uppercase tracking-widest text-on-surface-variant">Intermediate</span>
+</div>
+<h4 class="font-headline text-xl font-bold mb-2 group-hover:text-primary transition-colors">Evening Decompression</h4>
+<p class="text-on-surface-variant text-sm line-clamp-2">Let go of the workday baggage with this body-scan technique for somatic release.</p>
+</div>
+<div class="flex items-center gap-4 mt-4 text-on-surface-variant text-xs font-bold">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm" data-icon="schedule">schedule</span> 12m</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm text-primary" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span> 4.9</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full flex justify-around items-center px-4 pb-6 pt-3 bg-white/80 dark:bg-slate-900/80 backdrop-blur-xl rounded-t-[3rem] z-50 shadow-[0_-8px_32px_rgba(25,28,29,0.04)]">
+<a class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 px-5 py-2 hover:text-blue-600 transition-colors" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="home">home</span>
+<span class="font-['Inter'] text-[10px] font-semibold tracking-wide uppercase">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-blue-100 dark:bg-blue-900/40 text-blue-800 dark:text-blue-200 rounded-2xl px-5 py-2" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="explore" style="font-variation-settings: 'FILL' 1;">explore</span>
+<span class="font-['Inter'] text-[10px] font-semibold tracking-wide uppercase">Explore</span>
+</a>
+<a class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 px-5 py-2 hover:text-blue-600 transition-colors" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="auto_stories">auto_stories</span>
+<span class="font-['Inter'] text-[10px] font-semibold tracking-wide uppercase">Programs</span>
+</a>
+<a class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 px-5 py-2 hover:text-blue-600 transition-colors" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="analytics">analytics</span>
+<span class="font-['Inter'] text-[10px] font-semibold tracking-wide uppercase">Profile</span>
+</a>
+</nav>
+</body></html>
+
+<!-- Guided Sessions Library -->
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>DrMindit - Personalized Dashboard</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary-fixed": "#d4e3ff",
+                        "primary": "#005dac",
+                        "error-container": "#ffdad6",
+                        "tertiary-container": "#697781",
+                        "inverse-primary": "#a5c8ff",
+                        "on-secondary-fixed-variant": "#005312",
+                        "surface-container-low": "#f3f4f5",
+                        "on-primary": "#ffffff",
+                        "inverse-surface": "#2e3132",
+                        "inverse-on-surface": "#f0f1f2",
+                        "on-error": "#ffffff",
+                        "outline": "#717783",
+                        "secondary": "#1b6d24",
+                        "on-tertiary-fixed": "#0f1d25",
+                        "secondary-fixed-dim": "#88d982",
+                        "surface-container-highest": "#e1e3e4",
+                        "primary-container": "#1976d2",
+                        "tertiary-fixed-dim": "#bac9d3",
+                        "background": "#f8f9fa",
+                        "surface-variant": "#e1e3e4",
+                        "on-secondary-fixed": "#002204",
+                        "on-secondary": "#ffffff",
+                        "on-error-container": "#93000a",
+                        "on-primary-container": "#fffdff",
+                        "surface": "#f8f9fa",
+                        "on-tertiary": "#ffffff",
+                        "primary-fixed-dim": "#a5c8ff",
+                        "outline-variant": "#c1c6d4",
+                        "error": "#ba1a1a",
+                        "on-tertiary-fixed-variant": "#3b4951",
+                        "secondary-container": "#a0f399",
+                        "on-secondary-container": "#217128",
+                        "surface-tint": "#005faf",
+                        "surface-container": "#edeeef",
+                        "tertiary": "#505e68",
+                        "surface-container-high": "#e7e8e9",
+                        "tertiary-fixed": "#d6e5ef",
+                        "surface-bright": "#f8f9fa",
+                        "surface-dim": "#d9dadb",
+                        "on-tertiary-container": "#fdfdff",
+                        "on-primary-fixed": "#001c3a",
+                        "surface-container-lowest": "#ffffff",
+                        "secondary-fixed": "#a3f69c",
+                        "on-surface": "#191c1d",
+                        "on-surface-variant": "#414752",
+                        "on-primary-fixed-variant": "#004786",
+                        "on-background": "#191c1d"
+                    },
+                    fontFamily: {
+                        "headline": ["Manrope"],
+                        "body": ["Inter"],
+                        "label": ["Inter"]
+                    },
+                    borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8f9fa;
+        }
+        h1, h2, h3 {
+            font-family: 'Manrope', sans-serif;
+        }
+        .tonal-shift {
+            background: linear-gradient(180deg, rgba(255,255,255,0.8) 0%, rgba(243,244,245,0.8) 100%);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="text-on-surface antialiased pb-32">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-white/80 dark:bg-slate-900/80 backdrop-blur-xl shadow-sm dark:shadow-none">
+<div class="flex items-center justify-between px-6 py-4 w-full max-w-7xl mx-auto">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full overflow-hidden border-2 border-primary-fixed">
+<img alt="User profile" class="w-full h-full object-cover" data-alt="Close-up portrait of a serene young woman with soft natural lighting and a blurred green garden background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAyRu5feIpwsJaYZjm7YLuMcZzJ2fj1MNTvdyQU9QSGZtkMzxuQyXsfcFWi4fG_sq_jhTGdaPCXy7PFHsgKTnhQMqI8GQV98VC-4XGnkmklHY8C1yxJFWy_HkpH--NmzNolc_Q6gkQbx86Oq3S-vwBUjgX88p7gLvVd4XLOBvjmPT-UsDyCA-ZJl7D3ULCndr8-lLVDWmQxqOg4iSKwIULtkckO6WohiqvFaZYnPLPKY3OOl_7vWj_7O8hZCAh2CCCXhENg4n9oq1KY"/>
+</div>
+<h1 class="text-blue-700 dark:text-blue-400 font-extrabold tracking-tighter font-['Manrope'] text-lg">DrMindit</h1>
+</div>
+<div class="flex items-center gap-4">
+<button class="text-slate-500 dark:text-slate-400 p-2 rounded-full hover:bg-blue-50 dark:hover:bg-blue-900/20 transition-colors">
+<span class="material-symbols-outlined" data-icon="notifications">notifications</span>
+</button>
+</div>
+</div>
+</header>
+<main class="pt-24 px-6 max-w-7xl mx-auto">
+<!-- Hero Section: Daily Mental Score -->
+<section class="mb-12">
+<div class="flex flex-col md:flex-row gap-8 items-center bg-surface-container-lowest p-8 rounded-xl shadow-[0_-8px_32px_rgba(25,28,29,0.04)]">
+<div class="relative w-48 h-48 flex items-center justify-center">
+<svg class="w-full h-full transform -rotate-90">
+<circle class="text-surface-container-high" cx="96" cy="96" fill="transparent" r="88" stroke="currentColor" stroke-width="12"></circle>
+<circle class="text-primary" cx="96" cy="96" fill="transparent" r="88" stroke="currentColor" stroke-dasharray="552.92" stroke-dashoffset="121.64" stroke-linecap="round" stroke-width="12"></circle>
+</svg>
+<div class="absolute flex flex-col items-center">
+<span class="text-4xl font-extrabold font-headline tracking-tight text-on-surface">78</span>
+<span class="text-xs font-semibold text-on-surface-variant uppercase tracking-widest">Score</span>
+</div>
+</div>
+<div class="flex-1 space-y-4 text-center md:text-left">
+<div class="inline-flex items-center gap-2 px-4 py-1.5 bg-secondary-container/30 text-on-secondary-container rounded-full text-sm font-semibold">
+<span class="material-symbols-outlined text-sm" data-icon="local_fire_department">local_fire_department</span>
+                        7-day streak!
+                    </div>
+<h2 class="text-3xl font-bold font-headline leading-tight">Good morning, Sarah.<br/><span class="text-primary">You're doing great today.</span></h2>
+<p class="text-on-surface-variant leading-relaxed max-w-md">Your mental resilience is up by 12% this week. Keep up the mindfulness practice.</p>
+</div>
+</div>
+</section>
+<!-- Mood Tracking Section -->
+<section class="mb-12">
+<h3 class="text-xl font-bold font-headline mb-6">How are you feeling?</h3>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+<button class="group flex flex-col items-center gap-3 p-6 rounded-lg bg-surface-container-low hover:bg-primary-container transition-all duration-300">
+<div class="w-14 h-14 rounded-full bg-surface-container-highest group-hover:bg-white/20 flex items-center justify-center transition-colors">
+<span class="material-symbols-outlined text-3xl text-primary group-hover:text-white" data-icon="sentiment_very_satisfied">sentiment_very_satisfied</span>
+</div>
+<span class="font-semibold text-sm group-hover:text-white">Great</span>
+</button>
+<button class="group flex flex-col items-center gap-3 p-6 rounded-lg bg-surface-container-low hover:bg-primary-container transition-all duration-300">
+<div class="w-14 h-14 rounded-full bg-surface-container-highest group-hover:bg-white/20 flex items-center justify-center transition-colors">
+<span class="material-symbols-outlined text-3xl text-primary group-hover:text-white" data-icon="sentiment_satisfied">sentiment_satisfied</span>
+</div>
+<span class="font-semibold text-sm group-hover:text-white">Okay</span>
+</button>
+<button class="group flex flex-col items-center gap-3 p-6 rounded-lg bg-surface-container-low hover:bg-primary-container transition-all duration-300">
+<div class="w-14 h-14 rounded-full bg-surface-container-highest group-hover:bg-white/20 flex items-center justify-center transition-colors">
+<span class="material-symbols-outlined text-3xl text-primary group-hover:text-white" data-icon="sentiment_neutral">sentiment_neutral</span>
+</div>
+<span class="font-semibold text-sm group-hover:text-white">Tired</span>
+</button>
+<button class="group flex flex-col items-center gap-3 p-6 rounded-lg bg-surface-container-low hover:bg-primary-container transition-all duration-300">
+<div class="w-14 h-14 rounded-full bg-surface-container-highest group-hover:bg-white/20 flex items-center justify-center transition-colors">
+<span class="material-symbols-outlined text-3xl text-primary group-hover:text-white" data-icon="sentiment_dissatisfied">sentiment_dissatisfied</span>
+</div>
+<span class="font-semibold text-sm group-hover:text-white">Anxious</span>
+</button>
+</div>
+</section>
+<!-- Recommended Sessions (Asymmetric Grid) -->
+<section class="mb-12">
+<div class="flex justify-between items-end mb-6">
+<div>
+<h3 class="text-xl font-bold font-headline">Recommended for You</h3>
+<p class="text-sm text-on-surface-variant">Based on your recent activity</p>
+</div>
+<button class="text-primary font-semibold text-sm hover:underline">View All</button>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<!-- Session Card 1 -->
+<div class="relative h-64 rounded-xl overflow-hidden group cursor-pointer">
+<img alt="Anxiety Relief Session" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Peaceful sunset over a calm lake with soft pastel colors and gentle ripples on the water surface" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAxjzdgBHmnIe3JOUO2Gz9BikGQXYl_2GEOkYHCA1C_gG9ZUDNmdAULJPcDhykstqnKSVE4nGHi4KxyyTQ3ZTTb-RhltZqwvCLWtiqAXehzw84wHjcL4D-JQuZu-9XNrkL_obTgMxEWk0FUX1Y6zImHMR9ytgIKPdcHfr_dJ_5nwMxp5WStux6NB8bDkYzIbTfZb-JlGbnSyIwneD5zLLT-WjPc52EcEiyFGLaUIATMrDgga9hXoe1Ex57FEE2G755Q7Q9ntvDixH73"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+<div class="absolute bottom-0 p-6 w-full">
+<div class="flex items-center gap-2 text-white/80 text-xs font-semibold uppercase tracking-widest mb-2">
+<span class="material-symbols-outlined text-sm" data-icon="timer">timer</span>
+                            10 MINS • ANXIETY
+                        </div>
+<h4 class="text-white text-2xl font-bold font-headline mb-4">Anxiety Relief</h4>
+<div class="flex items-center justify-between">
+<button class="bg-white text-on-surface px-6 py-2 rounded-full text-sm font-bold flex items-center gap-2 hover:bg-primary-fixed transition-colors">
+<span class="material-symbols-outlined text-lg" data-icon="play_arrow" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+                                Start Session
+                            </button>
+</div>
+</div>
+</div>
+<!-- Session Card 2 -->
+<div class="relative h-64 rounded-xl overflow-hidden group cursor-pointer">
+<img alt="Sleep Session" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Cozy bedroom setting with soft warm lamp light, linen sheets, and a serene atmosphere for deep sleep" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCE18imW3qQ__qs6OzkWFr07RA1JXt98cGZdN4cy0jZJCEamrIG6COhCq7kZe-wopj0epa2_F3me8Fr9MrVuySn9oUQ0hn4FAFShJXMqVrtbG_zMTPj3vIJat3aUSLJ710mfvsF6ADnzt0YmeFlFjvU8yVsmRceTluRhNR3g20iPfMCKKtvPtsG_EvRtMjQEmDjdOHpwlF5GUX-3DJIEW6DCpqDexG-RfkPRrKN5nrnG4HO8aAWEywo7j2oBtLpdkGfdFMvwm_RkIhT"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+<div class="absolute bottom-0 p-6 w-full">
+<div class="flex items-center gap-2 text-white/80 text-xs font-semibold uppercase tracking-widest mb-2">
+<span class="material-symbols-outlined text-sm" data-icon="bedtime">bedtime</span>
+                            15 MINS • SLEEP
+                        </div>
+<h4 class="text-white text-2xl font-bold font-headline mb-4">Better Sleep Tonight</h4>
+<div class="flex items-center justify-between">
+<button class="bg-white text-on-surface px-6 py-2 rounded-full text-sm font-bold flex items-center gap-2 hover:bg-primary-fixed transition-colors">
+<span class="material-symbols-outlined text-lg" data-icon="play_arrow" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+                                Start Session
+                            </button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Insights Bento Section -->
+<section class="mb-12">
+<h3 class="text-xl font-bold font-headline mb-6">Weekly Insights</h3>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<div class="md:col-span-2 bg-primary-container p-8 rounded-xl text-white relative overflow-hidden">
+<div class="relative z-10">
+<h4 class="text-2xl font-bold font-headline mb-2">Focus on Breath</h4>
+<p class="text-white/80 max-w-sm mb-6">Your sessions show you're most calm during breath-work exercises. Try our new deep breathing program.</p>
+<button class="bg-white/20 backdrop-blur-md text-white border border-white/30 px-6 py-2 rounded-full text-sm font-semibold hover:bg-white/30 transition-all">Explore Program</button>
+</div>
+<span class="material-symbols-outlined absolute -right-8 -bottom-8 text-[12rem] text-white/10 rotate-12" data-icon="air">air</span>
+</div>
+<div class="bg-surface-container-high p-8 rounded-xl flex flex-col justify-center items-center text-center">
+<span class="material-symbols-outlined text-5xl text-secondary mb-4" data-icon="psychology">psychology</span>
+<h4 class="text-lg font-bold font-headline mb-1">Mindful Minutes</h4>
+<p class="text-3xl font-extrabold text-primary">342</p>
+<p class="text-xs text-on-surface-variant uppercase tracking-widest mt-2">This month</p>
+</div>
+</div>
+</section>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full flex justify-around items-center px-4 pb-6 pt-3 bg-white/80 dark:bg-slate-900/80 backdrop-blur-xl z-50 rounded-t-[3rem] shadow-[0_-8px_32px_rgba(25,28,29,0.04)]">
+<!-- Home Active -->
+<a class="flex flex-col items-center justify-center bg-blue-100 dark:bg-blue-900/40 text-blue-800 dark:text-blue-200 rounded-2xl px-5 py-2 transition-all Active:scale-90 duration-200 ease-out" href="#">
+<span class="material-symbols-outlined" data-icon="home" style="font-variation-settings: 'FILL' 1;">home</span>
+<span class="font-['Inter'] text-[10px] font-semibold tracking-wide uppercase mt-1">Home</span>
+</a>
+<!-- Explore -->
+<a class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 px-5 py-2 hover:text-blue-600 dark:hover:text-blue-300 transition-all" href="#">
+<span class="material-symbols-outlined" data-icon="explore">explore</span>
+<span class="font-['Inter'] text-[10px] font-semibold tracking-wide uppercase mt-1">Explore</span>
+</a>
+<!-- Programs -->
+<a class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 px-5 py-2 hover:text-blue-600 dark:hover:text-blue-300 transition-all" href="#">
+<span class="material-symbols-outlined" data-icon="auto_stories">auto_stories</span>
+<span class="font-['Inter'] text-[10px] font-semibold tracking-wide uppercase mt-1">Programs</span>
+</a>
+<!-- Profile -->
+<a class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 px-5 py-2 hover:text-blue-600 dark:hover:text-blue-300 transition-all" href="#">
+<span class="material-symbols-outlined" data-icon="analytics">analytics</span>
+<span class="font-['Inter'] text-[10px] font-semibold tracking-wide uppercase mt-1">Profile</span>
+</a>
+</nav>
+<!-- FAB (Suppressed on Dashboard as per requirement unless primary action is specified, but dashboard typically has a quick log) -->
+<div class="fixed bottom-28 right-6 z-40">
+<button class="w-14 h-14 bg-gradient-to-br from-primary to-primary-container text-white rounded-full shadow-lg flex items-center justify-center hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-2xl" data-icon="add">add</span>
+</button>
+</div>
+</body></html>
+
+<!-- Personalized Dashboard -->
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&amp;family=Inter:wght@400;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary-fixed": "#d4e3ff",
+              "primary": "#005dac",
+              "error-container": "#ffdad6",
+              "tertiary-container": "#697781",
+              "inverse-primary": "#a5c8ff",
+              "on-secondary-fixed-variant": "#005312",
+              "surface-container-low": "#f3f4f5",
+              "on-primary": "#ffffff",
+              "inverse-surface": "#2e3132",
+              "inverse-on-surface": "#f0f1f2",
+              "on-error": "#ffffff",
+              "outline": "#717783",
+              "secondary": "#1b6d24",
+              "on-tertiary-fixed": "#0f1d25",
+              "secondary-fixed-dim": "#88d982",
+              "surface-container-highest": "#e1e3e4",
+              "primary-container": "#1976d2",
+              "tertiary-fixed-dim": "#bac9d3",
+              "background": "#f8f9fa",
+              "surface-variant": "#e1e3e4",
+              "on-secondary-fixed": "#002204",
+              "on-secondary": "#ffffff",
+              "on-error-container": "#93000a",
+              "on-primary-container": "#fffdff",
+              "surface": "#f8f9fa",
+              "on-tertiary": "#ffffff",
+              "primary-fixed-dim": "#a5c8ff",
+              "outline-variant": "#c1c6d4",
+              "error": "#ba1a1a",
+              "on-tertiary-fixed-variant": "#3b4951",
+              "secondary-container": "#a0f399",
+              "on-secondary-container": "#217128",
+              "surface-tint": "#005faf",
+              "surface-container": "#edeeef",
+              "tertiary": "#505e68",
+              "surface-container-high": "#e7e8e9",
+              "tertiary-fixed": "#d6e5ef",
+              "surface-bright": "#f8f9fa",
+              "surface-dim": "#d9dadb",
+              "on-tertiary-container": "#fdfdff",
+              "on-primary-fixed": "#001c3a",
+              "surface-container-lowest": "#ffffff",
+              "secondary-fixed": "#a3f69c",
+              "on-surface": "#191c1d",
+              "on-surface-variant": "#414752",
+              "on-primary-fixed-variant": "#004786",
+              "on-background": "#191c1d"
+            },
+            fontFamily: {
+              "headline": ["Manrope"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .bg-player-gradient {
+            background: linear-gradient(180deg, #f8f9fa 0%, #d4e3ff 100%);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface text-on-surface font-body min-h-screen">
+<!-- Top Navigation Suppression Rule: Task-focused sub-page with back action -->
+<header class="fixed top-0 w-full z-50 bg-white/40 backdrop-blur-xl">
+<div class="flex items-center justify-between px-6 py-4 w-full max-w-7xl mx-auto">
+<button class="w-12 h-12 flex items-center justify-center rounded-full hover:bg-white/50 transition-colors">
+<span class="material-symbols-outlined text-on-surface text-2xl" data-icon="expand_more">expand_more</span>
+</button>
+<div class="text-center">
+<span class="font-headline font-bold text-sm tracking-widest text-primary uppercase">Now Playing</span>
+</div>
+<button class="w-12 h-12 flex items-center justify-center rounded-full hover:bg-white/50 transition-colors">
+<span class="material-symbols-outlined text-on-surface text-2xl" data-icon="more_vert">more_vert</span>
+</button>
+</div>
+</header>
+<main class="relative min-h-screen flex flex-col items-center justify-between pt-24 pb-12 px-8 bg-player-gradient overflow-hidden">
+<!-- Large Centered Artwork -->
+<div class="w-full max-w-md aspect-square relative z-10 mt-4">
+<div class="w-full h-full rounded-xl overflow-hidden shadow-[0_32px_64px_-12px_rgba(0,93,172,0.2)] bg-surface-container-lowest transition-transform duration-700 hover:scale-[1.02]">
+<img class="w-full h-full object-cover" data-alt="abstract ethereal cloud formations in deep oceanic blues and soft lavender with a calm serene atmosphere" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCBhQSByrh2B1ijhjIkiR_FAh5FTB49Vbmf64nEHLbyVUsE3TUyS9urjRpmXNk258vqsfcJ1uOC_zmVQiAs_ch8vyyCvWSdN_IblO2Sd4qtAFQZVx-a1LqniphwU_FtVmXqPg9ls-zZ3Nb7hiKf2rlwXFb8bDnucWyV7Se7rjWpOB8k8KOj0G2_-E3H_391_o7BgoUpFnyep0N_wbuGqm6jH4gM_g2dMx6dfILln80fRhhVX7EzWmwN4CLv0NwXMwLW1z1hQMxsSbHf"/>
+</div>
+<!-- Subtle floating glow -->
+<div class="absolute -bottom-10 left-1/2 -translate-x-1/2 w-[80%] h-12 bg-primary/20 blur-3xl rounded-full -z-10"></div>
+</div>
+<!-- Session Details -->
+<div class="w-full max-w-md text-center mt-12 space-y-2">
+<h1 class="font-headline font-extrabold text-3xl md:text-4xl text-on-surface tracking-tight leading-tight">
+                Deep Sleep Sanctuary
+            </h1>
+<p class="font-body font-semibold text-primary text-lg">
+                Guided by Dr. Sarah Chen
+            </p>
+</div>
+<!-- Player Interface Container -->
+<div class="w-full max-w-md space-y-10 mt-8 mb-12">
+<!-- Seek Bar -->
+<div class="space-y-4">
+<div class="relative w-full h-1.5 bg-primary-fixed/30 rounded-full overflow-hidden">
+<div class="absolute top-0 left-0 h-full w-[42%] bg-gradient-to-r from-primary to-primary-container rounded-full"></div>
+</div>
+<div class="flex justify-between items-center text-xs font-semibold text-on-surface-variant tracking-wider">
+<span>12:45</span>
+<span>30:00</span>
+</div>
+</div>
+<!-- Main Controls -->
+<div class="flex items-center justify-between px-4">
+<button class="w-12 h-12 flex items-center justify-center text-on-surface-variant hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-3xl" data-icon="replay_15">replay_5</span>
+</button>
+<div class="flex items-center gap-10">
+<button class="w-10 h-10 flex items-center justify-center text-on-surface-variant hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-3xl" data-icon="skip_previous">skip_previous</span>
+</button>
+<button class="w-20 h-20 bg-primary text-on-primary rounded-full flex items-center justify-center shadow-xl shadow-primary/20 hover:scale-105 active:scale-95 transition-all">
+<span class="material-symbols-outlined text-5xl" data-icon="pause" style="font-variation-settings: 'FILL' 1;">pause</span>
+</button>
+<button class="w-10 h-10 flex items-center justify-center text-on-surface-variant hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-3xl" data-icon="skip_next">skip_next</span>
+</button>
+</div>
+<button class="w-12 h-12 flex items-center justify-center text-on-surface-variant hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-3xl" data-icon="forward_15">forward_5</span>
+</button>
+</div>
+<!-- Secondary Controls -->
+<div class="flex items-center justify-between bg-white/40 backdrop-blur-md rounded-lg p-6 px-8">
+<div class="flex items-center gap-4 flex-1">
+<span class="material-symbols-outlined text-on-surface-variant" data-icon="volume_up">volume_up</span>
+<div class="h-1 flex-1 bg-outline-variant/20 rounded-full overflow-hidden">
+<div class="h-full w-2/3 bg-on-surface-variant rounded-full"></div>
+</div>
+</div>
+<div class="flex items-center gap-8 ml-10">
+<button class="group relative flex flex-col items-center">
+<span class="material-symbols-outlined text-on-surface-variant group-hover:text-primary transition-colors" data-icon="bedtime">bedtime</span>
+<span class="absolute -bottom-5 text-[10px] font-bold text-on-surface-variant opacity-0 group-hover:opacity-100 transition-opacity uppercase tracking-tighter">Timer</span>
+</button>
+<button class="group relative flex flex-col items-center">
+<span class="material-symbols-outlined text-on-surface-variant group-hover:text-primary transition-colors" data-icon="playlist_play">playlist_play</span>
+<span class="absolute -bottom-5 text-[10px] font-bold text-on-surface-variant opacity-0 group-hover:opacity-100 transition-opacity uppercase tracking-tighter">Queue</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Audio Visualization / Ambient Hint -->
+<div class="absolute bottom-0 left-0 w-full h-32 pointer-events-none opacity-20 overflow-hidden">
+<div class="flex items-end justify-center gap-1 h-full pb-4">
+<div class="w-1.5 h-[40%] bg-primary rounded-full"></div>
+<div class="w-1.5 h-[60%] bg-primary rounded-full"></div>
+<div class="w-1.5 h-[80%] bg-primary rounded-full"></div>
+<div class="w-1.5 h-[50%] bg-primary rounded-full"></div>
+<div class="w-1.5 h-[70%] bg-primary rounded-full"></div>
+<div class="w-1.5 h-[90%] bg-primary rounded-full"></div>
+<div class="w-1.5 h-[65%] bg-primary rounded-full"></div>
+<div class="w-1.5 h-[45%] bg-primary rounded-full"></div>
+<div class="w-1.5 h-[30%] bg-primary rounded-full"></div>
+<div class="w-1.5 h-[50%] bg-primary rounded-full"></div>
+<div class="w-1.5 h-[75%] bg-primary rounded-full"></div>
+<div class="w-1.5 h-[55%] bg-primary rounded-full"></div>
+<div class="w-1.5 h-[40%] bg-primary rounded-full"></div>
+</div>
+</div>
+</main>
+<!-- Bottom Navigation Suppression Rule: Focus on audio session -->
+</body></html>
+
+<!-- Modern Audio Player -->
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary-fixed": "#d4e3ff",
+              "primary": "#005dac",
+              "error-container": "#ffdad6",
+              "tertiary-container": "#697781",
+              "inverse-primary": "#a5c8ff",
+              "on-secondary-fixed-variant": "#005312",
+              "surface-container-low": "#f3f4f5",
+              "on-primary": "#ffffff",
+              "inverse-surface": "#2e3132",
+              "inverse-on-surface": "#f0f1f2",
+              "on-error": "#ffffff",
+              "outline": "#717783",
+              "secondary": "#1b6d24",
+              "on-tertiary-fixed": "#0f1d25",
+              "secondary-fixed-dim": "#88d982",
+              "surface-container-highest": "#e1e3e4",
+              "primary-container": "#1976d2",
+              "tertiary-fixed-dim": "#bac9d3",
+              "background": "#f8f9fa",
+              "surface-variant": "#e1e3e4",
+              "on-secondary-fixed": "#002204",
+              "on-secondary": "#ffffff",
+              "on-error-container": "#93000a",
+              "on-primary-container": "#fffdff",
+              "surface": "#f8f9fa",
+              "on-tertiary": "#ffffff",
+              "primary-fixed-dim": "#a5c8ff",
+              "outline-variant": "#c1c6d4",
+              "error": "#ba1a1a",
+              "on-tertiary-fixed-variant": "#3b4951",
+              "secondary-container": "#a0f399",
+              "on-secondary-container": "#217128",
+              "surface-tint": "#005faf",
+              "surface-container": "#edeeef",
+              "tertiary": "#505e68",
+              "surface-container-high": "#e7e8e9",
+              "tertiary-fixed": "#d6e5ef",
+              "surface-bright": "#f8f9fa",
+              "surface-dim": "#d9dadb",
+              "on-tertiary-container": "#fdfdff",
+              "on-primary-fixed": "#001c3a",
+              "surface-container-lowest": "#ffffff",
+              "secondary-fixed": "#a3f69c",
+              "on-surface": "#191c1d",
+              "on-surface-variant": "#414752",
+              "on-primary-fixed-variant": "#004786",
+              "on-background": "#191c1d"
+            },
+            fontFamily: {
+              "headline": ["Manrope"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .progress-line::after {
+            content: '';
+            position: absolute;
+            left: 50%;
+            top: 100%;
+            width: 2px;
+            height: 100%;
+            background: theme('colors.outline-variant');
+            opacity: 0.15;
+            transform: translateX(-50%);
+        }
+        .progress-line-active::after {
+            background: theme('colors.secondary');
+            opacity: 0.3;
+        }
+        .last-day::after {
+            display: none;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background font-body text-on-surface">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-white/80 dark:bg-slate-900/80 backdrop-blur-xl shadow-sm dark:shadow-none">
+<div class="flex items-center justify-between px-6 py-4 w-full max-w-7xl mx-auto">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-full bg-surface-container-highest overflow-hidden">
+<img alt="User profile photo" class="w-full h-full object-cover" data-alt="portrait of a calm middle-aged man with a friendly expression in a soft-lit indoor setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCwPpdlsRMrsloxY50Zs2zuDu_RVWKDYPsqwbXtNWBYJAdUGO2NHliBfp9aXy9xkUYZt_DPZ2mLUHLAkzDwbMNj-ImqX1AWj9LBzNcD85OfCp8Y24P27mDFOfyroex7v3luLwXgPMo1YV3QlJ7_ndcB3qF-tV0Y9UXYFZoOv8-9o1hiU9x2PAn4mx1IMSmAXKxT2SX3uMc7J1L3MvMfUHCXFkU-LbgS1fjy-YAEWLTN3XZDv_sZQ7re4Y4_3CsKARlZ-SozXLFQamZx"/>
+</div>
+<h1 class="text-blue-700 dark:text-blue-400 font-extrabold tracking-tighter font-['Manrope'] text-lg">DrMindit</h1>
+</div>
+<button class="material-symbols-outlined text-slate-500 hover:bg-blue-50 p-2 rounded-full transition-colors" data-icon="notifications">notifications</button>
+</div>
+</header>
+<main class="pt-24 pb-32 px-6 max-w-2xl mx-auto">
+<!-- Program Header Hero -->
+<section class="mb-12">
+<div class="bg-surface-container-lowest rounded-xl p-8 shadow-[0_8px_32px_rgba(25,28,29,0.04)] relative overflow-hidden">
+<div class="absolute top-0 right-0 w-32 h-32 bg-primary/5 rounded-bl-full -mr-16 -mt-16"></div>
+<h2 class="font-headline font-extrabold text-3xl md:text-4xl text-on-surface tracking-tight mb-3">Anxiety Reset</h2>
+<p class="text-on-surface-variant body-md leading-relaxed mb-8 max-w-md">
+                    A evidence-based journey designed to rewire your nervous system and cultivate lasting inner peace through daily mindfulness and CBT techniques.
+                </p>
+<!-- Progress Section -->
+<div class="space-y-3">
+<div class="flex justify-between items-end">
+<span class="font-headline font-bold text-primary text-xl">Day 5 of 21</span>
+<span class="font-label text-sm font-semibold text-secondary">24% Complete</span>
+</div>
+<div class="h-3 w-full bg-secondary-container/30 rounded-full overflow-hidden">
+<div class="h-full bg-gradient-to-r from-secondary to-secondary-container w-[24%] rounded-full"></div>
+</div>
+</div>
+</div>
+</section>
+<!-- Structured Days List -->
+<div class="space-y-0 relative">
+<!-- Day 1: Completed -->
+<div class="flex gap-6 group">
+<div class="relative flex flex-col items-center">
+<div class="w-12 h-12 rounded-full bg-secondary text-on-secondary flex items-center justify-center z-10 progress-line progress-line-active">
+<span class="material-symbols-outlined text-2xl" data-icon="check" data-weight="fill" style="font-variation-settings: 'FILL' 1;">check</span>
+</div>
+</div>
+<div class="pb-12 opacity-60">
+<span class="font-label text-xs font-bold uppercase tracking-widest text-outline">Day 1</span>
+<h3 class="font-headline font-bold text-lg text-on-surface">Understanding the Cycle</h3>
+<p class="text-sm text-on-surface-variant">Introduction to cognitive patterns and anxiety loops.</p>
+</div>
+</div>
+<!-- Day 2: Completed -->
+<div class="flex gap-6 group">
+<div class="relative flex flex-col items-center">
+<div class="w-12 h-12 rounded-full bg-secondary text-on-secondary flex items-center justify-center z-10 progress-line progress-line-active">
+<span class="material-symbols-outlined text-2xl" data-icon="check" data-weight="fill" style="font-variation-settings: 'FILL' 1;">check</span>
+</div>
+</div>
+<div class="pb-12 opacity-60">
+<span class="font-label text-xs font-bold uppercase tracking-widest text-outline">Day 2</span>
+<h3 class="font-headline font-bold text-lg text-on-surface">Breath as an Anchor</h3>
+<p class="text-sm text-on-surface-variant">Mastering the 4-7-8 technique for immediate calm.</p>
+</div>
+</div>
+<!-- Day 3: Completed -->
+<div class="flex gap-6 group">
+<div class="relative flex flex-col items-center">
+<div class="w-12 h-12 rounded-full bg-secondary text-on-secondary flex items-center justify-center z-10 progress-line progress-line-active">
+<span class="material-symbols-outlined text-2xl" data-icon="check" data-weight="fill" style="font-variation-settings: 'FILL' 1;">check</span>
+</div>
+</div>
+<div class="pb-12 opacity-60">
+<span class="font-label text-xs font-bold uppercase tracking-widest text-outline">Day 3</span>
+<h3 class="font-headline font-bold text-lg text-on-surface">Body Scan Meditation</h3>
+<p class="text-sm text-on-surface-variant">Reconnecting with physical sensations and tension release.</p>
+</div>
+</div>
+<!-- Day 4: Completed -->
+<div class="flex gap-6 group">
+<div class="relative flex flex-col items-center">
+<div class="w-12 h-12 rounded-full bg-secondary text-on-secondary flex items-center justify-center z-10 progress-line progress-line-active">
+<span class="material-symbols-outlined text-2xl" data-icon="check" data-weight="fill" style="font-variation-settings: 'FILL' 1;">check</span>
+</div>
+</div>
+<div class="pb-12 opacity-60">
+<span class="font-label text-xs font-bold uppercase tracking-widest text-outline">Day 4</span>
+<h3 class="font-headline font-bold text-lg text-on-surface">Identifying Triggers</h3>
+<p class="text-sm text-on-surface-variant">Journaling session on environmental and mental cues.</p>
+</div>
+</div>
+<!-- Day 5: Active -->
+<div class="flex gap-6 group">
+<div class="relative flex flex-col items-center">
+<div class="w-12 h-12 rounded-full bg-primary text-on-primary flex items-center justify-center z-10 ring-8 ring-primary/10 progress-line">
+<span class="material-symbols-outlined" data-icon="play_arrow" data-weight="fill" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+</div>
+</div>
+<div class="pb-12 flex-1">
+<div class="bg-white rounded-xl p-6 border-l-4 border-primary shadow-md">
+<span class="font-label text-xs font-bold uppercase tracking-widest text-primary">Today • Day 5</span>
+<h3 class="font-headline font-bold text-xl text-on-surface mt-1">Naming the Feeling</h3>
+<p class="text-on-surface-variant mt-2 mb-4">Learn the "Labeling" technique to detach from intense emotional states.</p>
+<button class="w-full bg-gradient-to-r from-primary to-primary-container text-on-primary font-bold py-3 px-6 rounded-full flex items-center justify-center gap-2 transition-transform active:scale-95 shadow-lg shadow-primary/20">
+                            Start Session
+                            <span class="material-symbols-outlined" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Day 6: Locked -->
+<div class="flex gap-6 group">
+<div class="relative flex flex-col items-center">
+<div class="w-12 h-12 rounded-full bg-surface-container-high text-outline flex items-center justify-center z-10 progress-line">
+<span class="material-symbols-outlined text-xl" data-icon="lock">lock</span>
+</div>
+</div>
+<div class="pb-12">
+<span class="font-label text-xs font-bold uppercase tracking-widest text-outline">Day 6</span>
+<h3 class="font-headline font-bold text-lg text-on-surface-variant">The 5-4-3-2-1 Method</h3>
+<p class="text-sm text-outline">Grounding yourself in the present moment.</p>
+</div>
+</div>
+<!-- Day 7: Locked -->
+<div class="flex gap-6 group">
+<div class="relative flex flex-col items-center">
+<div class="w-12 h-12 rounded-full bg-surface-container-high text-outline flex items-center justify-center z-10 progress-line">
+<span class="material-symbols-outlined text-xl" data-icon="lock">lock</span>
+</div>
+</div>
+<div class="pb-12">
+<span class="font-label text-xs font-bold uppercase tracking-widest text-outline">Day 7</span>
+<h3 class="font-headline font-bold text-lg text-on-surface-variant">Week 1 Reflection</h3>
+<p class="text-sm text-outline">Consolidating your progress and setting intent.</p>
+</div>
+</div>
+<!-- Future Days Indicator -->
+<div class="flex justify-center pt-4">
+<div class="px-6 py-2 bg-surface-container-low rounded-full">
+<span class="text-sm font-semibold text-outline-variant">Days 8 - 21 Locked</span>
+</div>
+</div>
+</div>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full flex justify-around items-center px-4 pb-6 pt-3 bg-white/80 dark:bg-slate-900/80 backdrop-blur-xl rounded-t-[3rem] z-50 shadow-[0_-8px_32px_rgba(25,28,29,0.04)]">
+<a class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 px-5 py-2 hover:text-blue-600 transition-colors" href="#">
+<span class="material-symbols-outlined" data-icon="home">home</span>
+<span class="font-['Inter'] text-[10px] font-semibold tracking-wide uppercase mt-1">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 px-5 py-2 hover:text-blue-600 transition-colors" href="#">
+<span class="material-symbols-outlined" data-icon="explore">explore</span>
+<span class="font-['Inter'] text-[10px] font-semibold tracking-wide uppercase mt-1">Explore</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-blue-100 dark:bg-blue-900/40 text-blue-800 dark:text-blue-200 rounded-2xl px-5 py-2 active:scale-90 duration-200 ease-out" href="#">
+<span class="material-symbols-outlined" data-icon="auto_stories" data-weight="fill" style="font-variation-settings: 'FILL' 1;">auto_stories</span>
+<span class="font-['Inter'] text-[10px] font-semibold tracking-wide uppercase mt-1">Programs</span>
+</a>
+<a class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 px-5 py-2 hover:text-blue-600 transition-colors" href="#">
+<span class="material-symbols-outlined" data-icon="analytics">analytics</span>
+<span class="font-['Inter'] text-[10px] font-semibold tracking-wide uppercase mt-1">Profile</span>
+</a>
+</nav>
+</body></html>
